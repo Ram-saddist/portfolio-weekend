@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .navbar {
+            background-color: #FA9F8E;
+        }
+
+        .home,
+        .projects {
+            background-color: #FFF9E8;
+        }
+
+        .client-name {
+            font-size: 3rem;
+        }
+
+        .client-desc {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        .my-work {
+            background-color: #FA9F8E;
+        }
+
+        .about,
+        .project-link {
+            background-color: #379BA7;
+            color: white;
+        }
+        .project-link:hover{
+            border: 1px solid #379BA7;
+        }
+        .card-footer{
+            background-color: inherit;
+            border: none;
+        }
+
+        @media (max-width:500px) {
+            .client-name {
+                font-size: 2.3rem
+            }
+
+            .client-desc {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">Siva Ram</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-3 p-md-5 home">
+        <div class="row ">
+            <div class="col-12 col-md-6">
+                <h1 class="client-name">Hi I'm Siva Ram</h1>
+                <p class="client-desc">I am a front end developer where i can show my skill sets in this portfolio</p>
+                <a class="btn fw-bold my-work" href="">View My Work</a>
+            </div>
+
+            <div class="col-12 col-md-6 mt-3 mt-md-0">
+                <img src="./profilepic.jpg" class="w-50 float-lg-end" alt="profile pic" />
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid about mb-5 p-3 p-md-5">
+        <div class="row">
+            <div class="col-12">
+                <h1>About me</h1>
+                <p class="client-desc">I am a developer. I wored in deifferent domains like html, css, bootstrap and
+                    MERN Stack
+                    <a target="_blank" class="btn text-white border border-dark float-md-end mt-2"
+                        href="./PAVITHRA KODALI'S-Resume.pdf">Download Resume</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-3 p-md-5 projects">
+        <div class="row">
+            <div class="col">
+                <h1>Projects</h1>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://images.examples.com/wp-content/uploads/2017/06/Student-Portfolio-Examples.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        
+                    </div>
+                    <div class="card-footer">
+                            <a href="" class="btn project-link">Demo</a>
+                            <a href="" class="btn project-link">Code</a>
+                        </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://images.examples.com/wp-content/uploads/2017/06/Student-Portfolio-Examples.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a short card.</p>
+                        
+                    </div>
+                    <div class="card-footer">
+                            <a href="" class="btn project-link">Demo</a>
+                            <a href="" class="btn project-link">Code</a>
+                        </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://images.examples.com/wp-content/uploads/2017/06/Student-Portfolio-Examples.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content.</p>
+                        
+                    </div>
+                    <div class="card-footer">
+                            <a href="" class="btn project-link">Demo</a>
+                            <a href="" class="btn project-link">Code</a>
+                        </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://images.examples.com/wp-content/uploads/2017/06/Student-Portfolio-Examples.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        
+
+ 
+ <div class="card-footer">
+                            <a href="" class="btn project-link">Demo</a>
+                            <a href="" class="btn project-link">Code</a>
+                        </div>                       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
